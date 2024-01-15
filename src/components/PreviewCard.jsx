@@ -12,9 +12,9 @@ export default function PreviewCard() {
 
                 <p className="date">Published 21 Dec 2023</p>
 
-                <h2>
+                <h1>
                     <a href="#" className="preview_card--title">HTML & CSS foundations</a>
-                </h2>
+                </h1>
 
                 <p className="preview_card--text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
