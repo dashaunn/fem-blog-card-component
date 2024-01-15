@@ -41,6 +41,8 @@
   4. Improve text rendering
 */
 body {
+  color: var(--clr-black);
+  min-height: 600px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   justify-content: center;
@@ -73,86 +75,87 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .preview_card {
+  width: 100%;
+  max-width: 384px;
+  padding: 1.4rem;
+  background-color: var(--clr-white);
+  border-radius: 1.15rem;
   display: flex;
   flex-direction: column;
-  
-  /* max-height: 500px; */
-  max-width: 325px;
+  height: 522px;
 
-  padding: 1.5rem;
-  border-radius: 1rem;
+  
+  
   border: 1px solid var(--clr-black);
-  background-color: var(--clr-white);
-  box-shadow: 7px 7px 0 0 var(--clr-black);
+  
+  box-shadow: 8px 8px 0 0 var(--clr-black);
 }
 
 .preview_card:hover {
   box-shadow: 15px 15px 0 0 var(--clr-black);
+  transition: .1s;
 }
 
 .preview_card--img {
   border-radius: .75rem;
-  margin-bottom: 1rem;
-  max-width: 280px;
 }
 
 .topic {
+  margin-top: 1.5rem;
   background-color: var(--clr-yellow);
-  padding: .25rem .75rem;
+  padding: .2rem .8rem;
   font-family: 'Figtree-ExtraBold';
-  font-size: .75rem;
-  border-radius: .35rem;
+  font-size: .9rem;
+  border-radius: .3rem;
+  letter-spacing: -.01rem;
   width: min-content;
 }
 
 .date {
-  padding: .75rem 0 0 0;
+  margin-top: .75rem;
   font-family: 'Figtree-Semibold';
-  font-size: .75rem;
+  font-size: .88rem;
 }
 
 .preview_card--title {
+  margin-top: .7rem;
+  display: flex;
   color: var(--clr-black);
   font-family: 'Figtree-ExtraBold';
-  font-size: 1.25rem;
-  padding-top: .5rem;
-  padding-bottom: 0rem;
+ 
 }
 
 .preview_card--title:hover {
   color: var(--clr-yellow);
   cursor: pointer;
+  transition: .2s;
 }
 
 .preview_card--text {
+  margin-top: .7rem;
   color: var(--clr-grey);
-  font-size: .8rem;
-  padding-top: .25rem;
+  letter-spacing: -.015rem;
 }
 
 .author_info {
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  position: relative;
-  justify-items: flex-start;
-  padding-top: 1rem;
+
 }
 
 .author_img {
   max-width: 2rem;
-  margin-right: .6rem;
+
 }
 
 .author_name {
+  margin-left: .75rem;
   font-family: 'Figtree-ExtraBold';
   font-size: .85rem;
 }
 
 @media (min-width: 450px) {
-  .preview_card {
-    max-width: 350px;
-  }
-  .preview_card--img {
-    max-width: 330px;
-  }
+  
+
 }
