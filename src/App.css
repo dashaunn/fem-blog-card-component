@@ -118,11 +118,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .preview_card--title {
-  margin-top: .7rem;
+  margin-top: 1rem;
   display: flex;
   color: var(--clr-black);
   font-family: 'Figtree-ExtraBold';
- 
+  font-size: 1.5rem;
 }
 
 .preview_card--title:hover {
@@ -132,7 +132,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .preview_card--text {
-  margin-top: .7rem;
+  margin-top: 1rem;
   color: var(--clr-grey);
   letter-spacing: -.015rem;
 }
@@ -146,13 +146,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .author_img {
   max-width: 2rem;
-
 }
 
 .author_name {
   margin-left: .75rem;
   font-family: 'Figtree-ExtraBold';
-  font-size: .85rem;
+  font-size: .88rem;
 }
 
 @media (min-width: 450px) {
